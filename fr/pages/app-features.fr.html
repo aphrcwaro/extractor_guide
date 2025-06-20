@@ -34,6 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-f8cb7fe94b71c4ea6759b609738bfe9c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-68d834354916604f5f41eae73f500b81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-f8cb7fe94b71c4ea6759b609738bfe9c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script><link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -309,25 +311,17 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table des matières</h2>
    
   <ul>
-<li><a href="#overview-of-app-features" id="toc-overview-of-app-features" class="nav-link active" data-scroll-target="#overview-of-app-features"><span class="header-section-number">2.1</span> Overview of App Features</a></li>
+<li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">2.1</span> Overview</a></li>
   <li>
-<a href="#navigation-bar-top-menu" id="toc-navigation-bar-top-menu" class="nav-link" data-scroll-target="#navigation-bar-top-menu"><span class="header-section-number">2.2</span> Navigation Bar (Top Menu)</a>
+<a href="#top-navigation-bar" id="toc-top-navigation-bar" class="nav-link" data-scroll-target="#top-navigation-bar"><span class="header-section-number">2.2</span> Top Navigation Bar</a>
   <ul class="collapse">
-<li><a href="#key-elements-of-the-top-navigation-bar" id="toc-key-elements-of-the-top-navigation-bar" class="nav-link" data-scroll-target="#key-elements-of-the-top-navigation-bar"><span class="header-section-number">2.2.1</span> Key Elements of the Top Navigation Bar</a></li>
+<li><a href="#service-data-tab" id="toc-service-data-tab" class="nav-link" data-scroll-target="#service-data-tab"><span class="header-section-number">2.2.1</span> Service Data Tab:</a></li>
+  <li><a href="#population-data-tab" id="toc-population-data-tab" class="nav-link" data-scroll-target="#population-data-tab"><span class="header-section-number">2.2.2</span> Population Data Tab</a></li>
+  <li><a href="#countdown-tab" id="toc-countdown-tab" class="nav-link" data-scroll-target="#countdown-tab"><span class="header-section-number">2.2.3</span> Countdown Tab</a></li>
+  <li><a href="#context-information" id="toc-context-information" class="nav-link" data-scroll-target="#context-information"><span class="header-section-number">2.2.4</span> Context Information</a></li>
   </ul>
 </li>
-  <li>
-<a href="#sidebar" id="toc-sidebar" class="nav-link" data-scroll-target="#sidebar"><span class="header-section-number">2.3</span> Sidebar</a>
-  <ul class="collapse">
-<li><a href="#sidebar-navigation" id="toc-sidebar-navigation" class="nav-link" data-scroll-target="#sidebar-navigation"><span class="header-section-number">2.3.1</span> Sidebar Navigation</a></li>
-  </ul>
-</li>
-  <li>
-<a href="#main-panelbody-content" id="toc-main-panelbody-content" class="nav-link" data-scroll-target="#main-panelbody-content"><span class="header-section-number">2.4</span> Main Panel(Body Content)</a>
-  <ul class="collapse">
-<li><a href="#key-elements-of-the-main-panel" id="toc-key-elements-of-the-main-panel" class="nav-link" data-scroll-target="#key-elements-of-the-main-panel"><span class="header-section-number">2.4.1</span> Key Elements of the Main Panel</a></li>
-  </ul>
-</li>
+  <li><a href="#sidebar" id="toc-sidebar" class="nav-link" data-scroll-target="#sidebar"><span class="header-section-number">2.3</span> Sidebar</a></li>
   </ul>
 <div class="toc-actions"><ul>
 <li><a href="https://github.com/aphrcwaro/extractor_guide/edit/main/pages/app-features.fr.qmd" class="toc-action"><i class="bi bi-github"></i>Modifier cette page</a></li>
@@ -361,89 +355,101 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><section id="overview-of-app-features" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="overview-of-app-features">
-<span class="header-section-number">2.1</span> Overview of App Features</h2>
-<p>This section details the main components of the <strong>cd2030.extractor</strong> Shiny App interface: the <strong>Top Navigation Bar (Green Header)</strong>, <strong>Sidebar (Data Controls)</strong>, and <strong>Main Panel (Body Content)</strong>. Understanding these elements will help you navigate and use the app more effectively.</p>
-</section><section id="navigation-bar-top-menu" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="navigation-bar-top-menu">
-<span class="header-section-number">2.2</span> Navigation Bar (Top Menu)</h2>
-<p>The Top Navigation Bar, located at the top of the app, provides key controls. The navigation tabs included <code>Service Data</code>, <code>Population Data</code> and <code>Countdown Data</code>. On the right side it contains the name of the logged in user and the country</p>
-<section id="key-elements-of-the-top-navigation-bar" class="level3" data-number="2.2.1"><h3 data-number="2.2.1" class="anchored" data-anchor-id="key-elements-of-the-top-navigation-bar">
-<span class="header-section-number">2.2.1</span> Key Elements of the Top Navigation Bar</h3>
-<ol type="1">
+</header><section id="overview" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="overview">
+<span class="header-section-number">2.1</span> Overview</h2>
+<p>This <strong>cd2030.extractor</strong> app has three main sections</p>
+<ul>
 <li>
-<strong>Service Data Tab</strong>: This is mean to download the data for.</li>
-</ol>
-<p>images</p>
-<ol start="2" type="1">
-<li><p><strong>Population Data Tab</strong></p></li>
-<li><p><strong>Countdown Tab</strong></p></li>
+<strong>Top Navigation Bar</strong> (Green Header)</li>
 <li>
-<p><strong>Context Information</strong></p>
-<ul><li>
-</li></ul>
-</li>
-</ol></section></section><section id="sidebar" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="sidebar">
+<strong>Sidebar</strong> (Data Controls on the left)</li>
+<li>
+<strong>Main Panel</strong> (Central Content area)</li>
+</ul>
+<p>Understanding these sections helps you select, filter, and extract DHIS2 data efficiently.</p>
+</section><section id="top-navigation-bar" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="top-navigation-bar">
+<span class="header-section-number">2.2</span> Top Navigation Bar</h2>
+<p>The Navigation Bar spans the top of the app. It include:</p>
+<ul>
+<li>Three navigation tabs: <code>Service Data</code>, <code>Population Data</code> and <code>Countdown Data</code>.</li>
+<li>User identity and country displayedOn the right side</li>
+<li>If logged in via a custom URL, the base URL appears instead of the country name</li>
+</ul>
+<section id="service-data-tab" class="level3" data-number="2.2.1"><h3 data-number="2.2.1" class="anchored" data-anchor-id="service-data-tab">
+<span class="header-section-number">2.2.1</span> Service Data Tab:</h3>
+<p>Use this tab to retrieve monthly service data.</p>
+<ul>
+<li>Select data elements from DHIS2</li>
+<li>Filter by period, organisation level, or unit</li>
+<li>View and download structured data tables</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="../images/service-tab.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../images/service-tab.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="population-data-tab" class="level3" data-number="2.2.2"><h3 data-number="2.2.2" class="anchored" data-anchor-id="population-data-tab">
+<span class="header-section-number">2.2.2</span> Population Data Tab</h3>
+<p>Used for downloading population data or other yearly indicators.</p>
+<ul>
+<li>Allows selection of elements organized by year</li>
+<li>Functions similarly to Service Data but on an annual scale</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="../images/population-tab.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../images/population-tab.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="countdown-tab" class="level3" data-number="2.2.3"><h3 data-number="2.2.3" class="anchored" data-anchor-id="countdown-tab">
+<span class="header-section-number">2.2.3</span> Countdown Tab</h3>
+<p>Enables extraction of Countdown indicators.</p>
+<ul>
+<li>Maps DHIS2 data elements to Countdown indicators</li>
+<li>Downloads mapped data and structure for portability</li>
+<li>Exports Excel file preformatted for Countdown data analysis</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="../images/countdown-tab.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../images/countdown-tab.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="context-information" class="level3" data-number="2.2.4"><h3 data-number="2.2.4" class="anchored" data-anchor-id="context-information">
+<span class="header-section-number">2.2.4</span> Context Information</h3>
+<p>Located on the top-right.</p>
+<ul>
+<li>Shows logged-in username</li>
+<li>Displays selected country</li>
+<li>If using a custom DHIS2 instance, shows the instance URL instead</li>
+<li>Has a log-out button to clear the credentials</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="../images/context-menu.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../images/context-menu.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section></section><section id="sidebar" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="sidebar">
 <span class="header-section-number">2.3</span> Sidebar</h2>
-<p>The Sidebar is located on the left side of the app and contains the main navigation elements.It provides navigation through the analysis workflow. The sections are arranged sequentially to guide you through the process.</p>
-<section id="sidebar-navigation" class="level3" data-number="2.3.1"><h3 data-number="2.3.1" class="anchored" data-anchor-id="sidebar-navigation">
-<span class="header-section-number">2.3.1</span> Sidebar Navigation</h3>
-<p>images</p>
-<ol type="1">
-<li><p><strong>Introduction</strong>: Provides a brief overview of the app’s purpose and functionality.</p></li>
-<li><p><strong>Load Data</strong>: Allows you to upload and manage your datasets (e.g. Health Facility Datasets, Master datasets, and cache file).</p></li>
-<li>
-<p><strong>Data Quality</strong>: Provides tools for assessing the quality of your data, including checks for missing values and inconsistencies. Subsections include:</p>
-<ul>
-<li>Reporting Rate</li>
-<li>Outlier Detection</li>
-<li>Consistency Check</li>
-<li>Data Completeness</li>
-<li>Calculate Ratios</li>
-<li>Overall Score</li>
-</ul>
-</li>
-</ol>
-<p>images</p>
-<ol start="4" type="1">
-<li>
-<strong>Analysis Set-up</strong>: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the sub-national survey and mapping data to the uploaded data.</li>
-</ol>
-<p>images</p>
-<ol start="5" type="1">
-<li>
-<strong>National Analysis</strong>: Provides tools for analyzing national-level data, including coverage and equity analysis.</li>
-<li>
-<strong>Sub-National Analysis:</strong> For all sub-national analyses</li>
-<li>
-<strong>Mortality Analysis:</strong> For all mortality analyses</li>
-<li>
-<strong>Service Utilization:</strong> ForCurative health services utilization for sick children analyses</li>
-<li>
-<strong>Health System Performance:</strong> Health systems progress and performance analysis</li>
-</ol></section></section><section id="main-panelbody-content" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="main-panelbody-content">
-<span class="header-section-number">2.4</span> Main Panel(Body Content)</h2>
-<p>The main panel is the central workspace where the analysis result, visualizations, and interactive elements are displayed.</p>
-<section id="key-elements-of-the-main-panel" class="level3" data-number="2.4.1"><h3 data-number="2.4.1" class="anchored" data-anchor-id="key-elements-of-the-main-panel">
-<span class="header-section-number">2.4.1</span> Key Elements of the Main Panel</h3>
+<p>The Sidebar is located on the left side of the app and contains the data control for which the data will be downloaded. It contains the following</p>
 <ol type="1">
 <li>
-<strong>Page Title</strong>: Displays the current module or analysis step (e.g., “Reporting Rate”).</li>
-</ol>
-<p>images</p>
-<ol start="2" type="1">
+<strong>Data Level</strong>: This is for the level of data to be downloaded. The selected level will be considered to be the admin level 2 by the countdown tab.</li>
 <li>
-<strong>Action Buttons</strong>: Provides context-specific actions:
-<ul>
-<li><p><strong>Download Report</strong>: Helps you to download two reports: <strong>Synthesis report</strong> and the <strong>Subnational one paper report</strong></p></li>
+<strong>Filter by Data Level</strong>: This is meant to filter the data downloaded by a single of multiple organisation units at the selected data level</li>
 <li>
-<p><strong>Generate Report</strong>: Downloads a report specific to the analysis section.</p>
-<p>NB: This button is green in colour and only appears in the sections where the user can download the section reports.</p>
-</li>
-<li><p><strong>Get Help</strong>: Provides context-specific help and documentation for the current page.</p></li>
-<li><p><strong>Download Plot / Download Data:</strong> Allows the user to download the displayed output and the data associated with the output, respectively.</p></li>
-</ul>
-</li>
-</ol></section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<strong>Period</strong>: This is the period the data will be downloaded</li>
+</ol></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -866,13 +872,40 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
-
-
-
-
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
 <li><a href="https://github.com/aphrcwaro/extractor_guide/edit/main/pages/app-features.fr.qmd" class="toc-action"><i class="bi bi-github"></i>Modifier cette page</a></li>
 <li><a href="https://github.com/aphrcwaro/extractor_guide/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-</ul></div></div></div></footer>
+</ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 </body>
 </html>

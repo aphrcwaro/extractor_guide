@@ -78,18 +78,29 @@
     "href": "pages/app-features.pt.html",
     "title": "2  App Features",
     "section": "",
-    "text": "2.1 Overview of App Features\nThis section details the main components of the cd2030.extractor Shiny App interface: the Top Navigation Bar (Green Header), Sidebar (Data Controls), and Main Panel (Body Content). Understanding these elements will help you navigate and use the app more effectively.",
+    "text": "2.1 Overview\nThis cd2030.extractor app has three main sections\nUnderstanding these sections helps you select, filter, and extract DHIS2 data efficiently.",
     "crumbs": [
       "Sobre este Guia",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
     ]
   },
   {
-    "objectID": "pages/app-features.pt.html#navigation-bar-top-menu",
-    "href": "pages/app-features.pt.html#navigation-bar-top-menu",
+    "objectID": "pages/app-features.pt.html#overview",
+    "href": "pages/app-features.pt.html#overview",
     "title": "2  App Features",
-    "section": "2.2 Navigation Bar (Top Menu)",
-    "text": "2.2 Navigation Bar (Top Menu)\nThe Top Navigation Bar, located at the top of the app, provides key controls. The navigation tabs included Service Data, Population Data and Countdown Data. On the right side it contains the name of the logged in user and the country\n\n2.2.1 Key Elements of the Top Navigation Bar\n\nService Data Tab: This is mean to download the data for.\n\nimages\n\nPopulation Data Tab\nCountdown Tab\nContext Information",
+    "section": "",
+    "text": "Top Navigation Bar (Green Header)\nSidebar (Data Controls on the left)\nMain Panel (Central Content area)",
+    "crumbs": [
+      "Sobre este Guia",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
+    ]
+  },
+  {
+    "objectID": "pages/app-features.pt.html#top-navigation-bar",
+    "href": "pages/app-features.pt.html#top-navigation-bar",
+    "title": "2  App Features",
+    "section": "2.2 Top Navigation Bar",
+    "text": "2.2 Top Navigation Bar\nThe Navigation Bar spans the top of the app. It include:\n\nThree navigation tabs: Service Data, Population Data and Countdown Data.\nUser identity and country displayedOn the right side\nIf logged in via a custom URL, the base URL appears instead of the country name\n\n\n2.2.1 Service Data Tab:\nUse this tab to retrieve monthly service data.\n\nSelect data elements from DHIS2\nFilter by period, organisation level, or unit\nView and download structured data tables\n\n\n\n\n\n\n\n\n\n\n\n\n2.2.2 Population Data Tab\nUsed for downloading population data or other yearly indicators.\n\nAllows selection of elements organized by year\nFunctions similarly to Service Data but on an annual scale\n\n\n\n\n\n\n\n\n\n\n\n\n2.2.3 Countdown Tab\nEnables extraction of Countdown indicators.\n\nMaps DHIS2 data elements to Countdown indicators\nDownloads mapped data and structure for portability\nExports Excel file preformatted for Countdown data analysis\n\n\n\n\n\n\n\n\n\n\n\n\n2.2.4 Context Information\nLocated on the top-right.\n\nShows logged-in username\nDisplays selected country\nIf using a custom DHIS2 instance, shows the instance URL instead\nHas a log-out button to clear the credentials",
     "crumbs": [
       "Sobre este Guia",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
@@ -100,18 +111,7 @@
     "href": "pages/app-features.pt.html#sidebar",
     "title": "2  App Features",
     "section": "2.3 Sidebar",
-    "text": "2.3 Sidebar\nThe Sidebar is located on the left side of the app and contains the main navigation elements.It provides navigation through the analysis workflow. The sections are arranged sequentially to guide you through the process.\n\n2.3.1 Sidebar Navigation\nimages\n\nIntroduction: Provides a brief overview of the app’s purpose and functionality.\nLoad Data: Allows you to upload and manage your datasets (e.g. Health Facility Datasets, Master datasets, and cache file).\nData Quality: Provides tools for assessing the quality of your data, including checks for missing values and inconsistencies. Subsections include:\n\nReporting Rate\nOutlier Detection\nConsistency Check\nData Completeness\nCalculate Ratios\nOverall Score\n\n\nimages\n\nAnalysis Set-up: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the sub-national survey and mapping data to the uploaded data.\n\nimages\n\nNational Analysis: Provides tools for analyzing national-level data, including coverage and equity analysis.\nSub-National Analysis: For all sub-national analyses\nMortality Analysis: For all mortality analyses\nService Utilization: ForCurative health services utilization for sick children analyses\nHealth System Performance: Health systems progress and performance analysis",
-    "crumbs": [
-      "Sobre este Guia",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
-    ]
-  },
-  {
-    "objectID": "pages/app-features.pt.html#main-panelbody-content",
-    "href": "pages/app-features.pt.html#main-panelbody-content",
-    "title": "2  App Features",
-    "section": "2.4 Main Panel(Body Content)",
-    "text": "2.4 Main Panel(Body Content)\nThe main panel is the central workspace where the analysis result, visualizations, and interactive elements are displayed.\n\n2.4.1 Key Elements of the Main Panel\n\nPage Title: Displays the current module or analysis step (e.g., “Reporting Rate”).\n\nimages\n\nAction Buttons: Provides context-specific actions:\n\nDownload Report: Helps you to download two reports: Synthesis report and the Subnational one paper report\nGenerate Report: Downloads a report specific to the analysis section.\nNB: This button is green in colour and only appears in the sections where the user can download the section reports.\nGet Help: Provides context-specific help and documentation for the current page.\nDownload Plot / Download Data: Allows the user to download the displayed output and the data associated with the output, respectively.",
+    "text": "2.3 Sidebar\nThe Sidebar is located on the left side of the app and contains the data control for which the data will be downloaded. It contains the following\n\nData Level: This is for the level of data to be downloaded. The selected level will be considered to be the admin level 2 by the countdown tab.\nFilter by Data Level: This is meant to filter the data downloaded by a single of multiple organisation units at the selected data level\nPeriod: This is the period the data will be downloaded",
     "crumbs": [
       "Sobre este Guia",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
