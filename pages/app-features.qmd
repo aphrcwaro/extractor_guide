@@ -1,77 +1,84 @@
 # App Features
 
-## Overview of App Features
+## Overview
 
-This section details the main components of the **cd2030.extractor** Shiny App interface: the **Top Navigation Bar (Green Header)**, **Sidebar (Data Controls)**, and **Main Panel (Body Content)**. Understanding these elements will help you navigate and use the app more effectively.
+This **cd2030.extractor** app has three main sections
 
-## Navigation Bar (Top Menu)
+- **Top Navigation Bar** (Green Header)
+- **Sidebar** (Data Controls on the left)
+- **Main Panel** (Central Content area) 
 
-The Top Navigation Bar, located at the top of the app, provides key controls. The navigation tabs included `Service Data`, `Population Data` and `Countdown Data`. On the right side it contains the name of the logged in user and the country
+Understanding these sections helps you select, filter, and extract DHIS2 data efficiently.
 
-### Key Elements of the Top Navigation Bar
+## Top Navigation Bar
 
-1.  **Service Data Tab**: This is mean to download the data for.
+The Navigation Bar spans the top of the app.
+It include:
 
-images
+- Three navigation tabs: `Service Data`, `Population Data` and `Countdown Data`. 
+- User identity and country displayedOn the right side 
+- If logged in via a custom URL, the base URL appears instead of the country name
 
-2.  **Population Data Tab**
+### Service Data Tab: 
 
-3.  **Countdown Tab**
+Use this tab to retrieve monthly service data.
 
-4.  **Context Information**
+- Select data elements from DHIS2
+- Filter by period, organisation level, or unit
+- View and download structured data tables
 
-    -   
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","service-tab.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+### Population Data Tab
+
+Used for downloading population data or other yearly indicators.
+
+- Allows selection of elements organized by year
+- Functions similarly to Service Data but on an annual scale
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","population-tab.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+### Countdown Tab
+
+Enables extraction of Countdown indicators.
+
+- Maps DHIS2 data elements to Countdown indicators
+- Downloads mapped data and structure for portability
+- Exports Excel file preformatted for Countdown data analysis
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","countdown-tab.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+### Context Information
+
+Located on the top-right.
+
+- Shows logged-in username
+- Displays selected country
+- If using a custom DHIS2 instance, shows the instance URL instead
+- Has a log-out button to clear the credentials
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","context-menu.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
 
 ## Sidebar
 
-The Sidebar is located on the left side of the app and contains the main navigation elements.It provides navigation through the analysis workflow. The sections are arranged sequentially to guide you through the process.
+The Sidebar is located on the left side of the app and contains the data control for which the data will be downloaded. It contains the following
 
-### Sidebar Navigation
-
-images
-
-1.  **Introduction**: Provides a brief overview of the app's purpose and functionality.
-
-2.  **Load Data**: Allows you to upload and manage your datasets (e.g. Health Facility Datasets, Master datasets, and cache file).
-
-3.  **Data Quality**: Provides tools for assessing the quality of your data, including checks for missing values and inconsistencies. Subsections include:
-
-    -   Reporting Rate
-    -   Outlier Detection
-    -   Consistency Check
-    -   Data Completeness
-    -   Calculate Ratios
-    -   Overall Score
-
-images
-
-4.  **Analysis Set-up**: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the sub-national survey and mapping data to the uploaded data.
-
-images
-
-5.  **National Analysis**: Provides tools for analyzing national-level data, including coverage and equity analysis.
-6.  **Sub-National Analysis:** For all sub-national analyses
-7.  **Mortality Analysis:** For all mortality analyses
-8.  **Service Utilization:** ForCurative health services utilization for sick children analyses
-9.  **Health System Performance:** Health systems progress and performance analysis
-
-## Main Panel(Body Content)
-
-The main panel is the central workspace where the analysis result, visualizations, and interactive elements are displayed.
-
-### Key Elements of the Main Panel
-
-1.  **Page Title**: Displays the current module or analysis step (e.g., "Reporting Rate").
-
-images
-
-2.  **Action Buttons**: Provides context-specific actions:
-    -   **Download Report**: Helps you to download two reports: **Synthesis report** and the **Subnational one paper report**
-
-    -   **Generate Report**: Downloads a report specific to the analysis section.
-
-        NB: This button is green in colour and only appears in the sections where the user can download the section reports.
-
-    -   **Get Help**: Provides context-specific help and documentation for the current page.
-
-    -   **Download Plot / Download Data:** Allows the user to download the displayed output and the data associated with the output, respectively.
+1. **Data Level**: This is for the level of data to be downloaded. The selected level will be considered to be the admin level 2 by the countdown tab.
+2. **Filter by Data Level**: This is meant to filter the data downloaded by a single of multiple organisation units at the selected data level
+3. **Period**: This is the period the data will be downloaded
