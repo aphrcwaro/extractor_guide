@@ -1,0 +1,59 @@
+project:
+  type: book
+  output-dir: _book
+  
+published-title: "Last Updated"
+
+lightbox: true
+
+babelquarto:
+  languagecodes:
+  - name: fr
+    text: "Français"
+  - name: pt
+    text: "Português"
+  - name: en
+    text: "English"
+    
+  mainlanguage: 'en'
+  languages: ['fr', 'pt']
+  
+title-fr: Guide de l'utilisateur de l'extracteur CD2030
+title-pt: Guia do Usuário do Extrator CD2030
+
+lang: en
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    code-link: true
+    author: "David Kariuki"
+
+book:
+  title: CD2030 Extractor User Guide
+  search:
+    type: textbox
+
+  site-url: https://aphrcwaro.github.io/extractor_guide/
+  repo-url: https://github.com/aphrcwaro/extractor_guide/
+  repo-branch: main
+  repo-actions: [edit, issue]
+  
+  date: today
+  date-format: "MMM D, YYYY"
+  
+  chapters:
+    - index.qmd
+    
+    - part: About this guide
+      part-fr: À propos de ce guide
+      part-pt: Sobre este Guia
+      chapters:
+        - pages/getting-started.qmd
+        - pages/app-features.qmd
+    
+    - pages/references.qmd

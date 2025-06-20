@@ -1,0 +1,23 @@
+# Bem-vindo {.unnumbered}
+
+## Visão Geral da Iniciativa Countdown to 2030 {.unnumbered}
+
+A iniciativa Countdown to 2030 para a Saúde da Mulher, da Criança e do Adolescente (The Countdown) é uma colaboração global que envolve académicos de instituições nacionais, regionais e internacionais, agências da ONU, o Banco Mundial e organizações da sociedade civil. A iniciativa acompanha o progresso na Saúde e Nutrição Reprodutiva, Materna, Neonatal, Infantil e do Adolescente (RMNCAH+N), promovendo a advocacia e a responsabilização através de uma análise rigorosa de dados.
+
+**Os principais objetivos incluem:**
+
+-   Fortalecer a análise e o monitoramento de dados liderados pelos países
+-   Promover a inovação e a geração de evidências através da colaboração multinacional
+-   Aprimorar a medição e o monitoramento global
+-   Melhorar a comunicação de políticas e programas
+
+Para mais informações sobre a iniciativa Countdown to 2030, visite: [O site The Countdown](https://www.countdown2030.org/about)
+
+## Sobre o Pacote R `cd2030.extractor` {.unnumbered}
+
+O aplicativo R Shiny `cd2030.extractor` foi desenvolvido para ajudar você a baixar dados do Countdown diretamente do DHIS2. Ele funciona com o DHIS2 em todos os países suportados.
+
+Principais características:
+
+- Interface limpa e simples para seleção e gerenciamento de dados
+- Exporta dados no formato padrão do Countdown para análise e relatórios
