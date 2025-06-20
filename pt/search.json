@@ -1,0 +1,120 @@
+[
+  {
+    "objectID": "index.pt.html",
+    "href": "index.pt.html",
+    "title": "Guia do Usuário do Extrator CD2030",
+    "section": "",
+    "text": "Bem-vindo",
+    "crumbs": [
+      "Bem-vindo"
+    ]
+  },
+  {
+    "objectID": "index.pt.html#visão-geral-da-iniciativa-countdown-to-2030",
+    "href": "index.pt.html#visão-geral-da-iniciativa-countdown-to-2030",
+    "title": "Guia do Usuário do Extrator CD2030",
+    "section": "Visão Geral da Iniciativa Countdown to 2030",
+    "text": "Visão Geral da Iniciativa Countdown to 2030\nA iniciativa Countdown to 2030 para a Saúde da Mulher, da Criança e do Adolescente (The Countdown) é uma colaboração global que envolve académicos de instituições nacionais, regionais e internacionais, agências da ONU, o Banco Mundial e organizações da sociedade civil. A iniciativa acompanha o progresso na Saúde e Nutrição Reprodutiva, Materna, Neonatal, Infantil e do Adolescente (RMNCAH+N), promovendo a advocacia e a responsabilização através de uma análise rigorosa de dados.\nOs principais objetivos incluem:\n\nFortalecer a análise e o monitoramento de dados liderados pelos países\nPromover a inovação e a geração de evidências através da colaboração multinacional\nAprimorar a medição e o monitoramento global\nMelhorar a comunicação de políticas e programas\n\nPara mais informações sobre a iniciativa Countdown to 2030, visite: O site The Countdown",
+    "crumbs": [
+      "Bem-vindo"
+    ]
+  },
+  {
+    "objectID": "index.pt.html#sobre-o-pacote-r-cd2030.extractor",
+    "href": "index.pt.html#sobre-o-pacote-r-cd2030.extractor",
+    "title": "Guia do Usuário do Extrator CD2030",
+    "section": "Sobre o Pacote R cd2030.extractor",
+    "text": "Sobre o Pacote R cd2030.extractor\nO aplicativo R Shiny cd2030.extractor foi desenvolvido para ajudar você a baixar dados do Countdown diretamente do DHIS2. Ele funciona com o DHIS2 em todos os países suportados.\nPrincipais características:\n\nInterface limpa e simples para seleção e gerenciamento de dados\nExporta dados no formato padrão do Countdown para análise e relatórios",
+    "crumbs": [
+      "Bem-vindo"
+    ]
+  },
+  {
+    "objectID": "pages/getting-started.pt.html",
+    "href": "pages/getting-started.pt.html",
+    "title": "1  Getting started",
+    "section": "",
+    "text": "1.1 Software requirements\nThe tool simplifies the process of downloading country DHIS2 data, transforming it into a standardized Countdown format. It supports the mapping of country-specific RMNCAH indicators, which enhances data standardization and portability.\nTo use this innovative digital health analytics tool, the following are required:",
+    "crumbs": [
+      "Sobre este Guia",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started</span>"
+    ]
+  },
+  {
+    "objectID": "pages/getting-started.pt.html#sec-software-requirements",
+    "href": "pages/getting-started.pt.html#sec-software-requirements",
+    "title": "1  Getting started",
+    "section": "",
+    "text": "Install the latest versions of R and RStudio\nInstall RTools (for Windows users, to support package compilation)\nInstall the cd2030.extractor R package latest version-noted by the superscript suffix in the name of the App",
+    "crumbs": [
+      "Sobre este Guia",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started</span>"
+    ]
+  },
+  {
+    "objectID": "pages/getting-started.pt.html#sec-instal-r",
+    "href": "pages/getting-started.pt.html#sec-instal-r",
+    "title": "1  Getting started",
+    "section": "1.2 Installing R and RStudio",
+    "text": "1.2 Installing R and RStudio\nTo begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms.\nNote: R and RStudio are not the same. R is the programming language, while RStudio is an integrated development environment (IDE) that makes working with R easier.\nTo ensure smooth installation and functionality, it is recommended to install R first, followed by RStudio. This order is important as RStudio relies on R to function properly.\n\n1.2.1 Step 1: Download and Install R\nR is distributed via The Comprehensive R Archive Network (CRAN). Select your operating system from the homepage: Windows, Mac, or Linux.\nWindows\n\nNavigate to Download R for Windows and select the “base” option.\nClick the first link (e.g., “Download R x.x.x for Windows”) to download the installer.\nRun the installer and follow the prompts. Administrator privileges may be required.\nR will be installed in your system’s Program Files, with a shortcut added to the Start menu.\n\nMac\n\nClick Download R for Mac on the CRAN homepage.\nDownload the latest release package and run the installer.\nThe default installation settings are typically sufficient. You may be prompted to enter your system password.\n\nNote\nR is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.\n\n\n1.2.2 Step 2: Download and Install RStudio\nRStudio is an integrated development environment (IDE) designed for R. It features a script editor, console, graphics viewer, and additional tools for package management, debugging, and file organization.\nDownload RStudio from Posit Website\nDo I still need to download R? Even if you use RStudio, you’ll still need to download R to your computer. RStudio helps you use the version of R that lives on your computer, but it doesn’t come with a version of R on its own.\nAfter installation, launch RStudio and begin interacting with R through its console and script windows.",
+    "crumbs": [
+      "Sobre este Guia",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started</span>"
+    ]
+  },
+  {
+    "objectID": "pages/getting-started.pt.html#sec-instal-cd2030-extractor",
+    "href": "pages/getting-started.pt.html#sec-instal-cd2030-extractor",
+    "title": "1  Getting started",
+    "section": "1.3 Installing the CD2030 Extractor package",
+    "text": "1.3 Installing the CD2030 Extractor package\nAfter installing R and RStudio, you may proceed with installing the Countdown 2030 Extractor application, which is hosted on GitHub under the repository cd2030.extractor. The application is implemented as an R package and supports interactive dashboard generation via Shiny.\n\n1.3.1 Installation via R Console\n\nif (!requireNamespace(\"devtools\", quietly = TRUE)) install.packages(\"devtools\")\ndevtools::install_github(\"aphrcwaro/dhis2\")\n\n\n\n1.3.2 Launching the Application\n\nlibrary(cd2030.extractor)\nrun_app()\n\nThe Shiny dashboard will launch automatically in your default web browser.\n\n\n\n\n\n\n\n\n\n\n\n1.3.3 Alternative Installation via GitHub Desktop or Git or direct download\nAdvanced users with GitHub accounts may prefer to clone the repository directly. This method allows for:\n\nVersion control\nContribution to the codebase\nInspection of the package structure\nOnce cloned, open the .Rproj file in RStudio to set the working directory.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo install and run:\n\ndevtools::load_all()\nrun_app()\n\n\n\n1.3.4 RTools for Windows\nTo compile packages from source, especially development versions, RTools must be installed. Ensure the Rtools selected corresponds and is compatibile with your installed R version.:\n\nR 4.2.0 → Rtools42\nR 4.4.0 → Rtools44\nR 4.5.0 → Rtools45\n\nRtools can be downloaded from CRAN",
+    "crumbs": [
+      "Sobre este Guia",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started</span>"
+    ]
+  },
+  {
+    "objectID": "pages/app-features.pt.html",
+    "href": "pages/app-features.pt.html",
+    "title": "2  App Features",
+    "section": "",
+    "text": "2.1 Overview of App Features\nThis section details the main components of the cd2030.extractor Shiny App interface: the Top Navigation Bar (Green Header), Sidebar (Data Controls), and Main Panel (Body Content). Understanding these elements will help you navigate and use the app more effectively.",
+    "crumbs": [
+      "Sobre este Guia",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
+    ]
+  },
+  {
+    "objectID": "pages/app-features.pt.html#navigation-bar-top-menu",
+    "href": "pages/app-features.pt.html#navigation-bar-top-menu",
+    "title": "2  App Features",
+    "section": "2.2 Navigation Bar (Top Menu)",
+    "text": "2.2 Navigation Bar (Top Menu)\nThe Top Navigation Bar, located at the top of the app, provides key controls. The navigation tabs included Service Data, Population Data and Countdown Data. On the right side it contains the name of the logged in user and the country\n\n2.2.1 Key Elements of the Top Navigation Bar\n\nService Data Tab: This is mean to download the data for.\n\nimages\n\nPopulation Data Tab\nCountdown Tab\nContext Information",
+    "crumbs": [
+      "Sobre este Guia",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
+    ]
+  },
+  {
+    "objectID": "pages/app-features.pt.html#sidebar",
+    "href": "pages/app-features.pt.html#sidebar",
+    "title": "2  App Features",
+    "section": "2.3 Sidebar",
+    "text": "2.3 Sidebar\nThe Sidebar is located on the left side of the app and contains the main navigation elements.It provides navigation through the analysis workflow. The sections are arranged sequentially to guide you through the process.\n\n2.3.1 Sidebar Navigation\nimages\n\nIntroduction: Provides a brief overview of the app’s purpose and functionality.\nLoad Data: Allows you to upload and manage your datasets (e.g. Health Facility Datasets, Master datasets, and cache file).\nData Quality: Provides tools for assessing the quality of your data, including checks for missing values and inconsistencies. Subsections include:\n\nReporting Rate\nOutlier Detection\nConsistency Check\nData Completeness\nCalculate Ratios\nOverall Score\n\n\nimages\n\nAnalysis Set-up: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the sub-national survey and mapping data to the uploaded data.\n\nimages\n\nNational Analysis: Provides tools for analyzing national-level data, including coverage and equity analysis.\nSub-National Analysis: For all sub-national analyses\nMortality Analysis: For all mortality analyses\nService Utilization: ForCurative health services utilization for sick children analyses\nHealth System Performance: Health systems progress and performance analysis",
+    "crumbs": [
+      "Sobre este Guia",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
+    ]
+  },
+  {
+    "objectID": "pages/app-features.pt.html#main-panelbody-content",
+    "href": "pages/app-features.pt.html#main-panelbody-content",
+    "title": "2  App Features",
+    "section": "2.4 Main Panel(Body Content)",
+    "text": "2.4 Main Panel(Body Content)\nThe main panel is the central workspace where the analysis result, visualizations, and interactive elements are displayed.\n\n2.4.1 Key Elements of the Main Panel\n\nPage Title: Displays the current module or analysis step (e.g., “Reporting Rate”).\n\nimages\n\nAction Buttons: Provides context-specific actions:\n\nDownload Report: Helps you to download two reports: Synthesis report and the Subnational one paper report\nGenerate Report: Downloads a report specific to the analysis section.\nNB: This button is green in colour and only appears in the sections where the user can download the section reports.\nGet Help: Provides context-specific help and documentation for the current page.\nDownload Plot / Download Data: Allows the user to download the displayed output and the data associated with the output, respectively.",
+    "crumbs": [
+      "Sobre este Guia",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
+    ]
+  }
+]
