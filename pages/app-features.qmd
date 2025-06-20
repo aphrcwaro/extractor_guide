@@ -2,30 +2,25 @@
 
 ## Overview of App Features
 
-This section details the main components of the **cd2030.rmncah** Shiny App interface: the **Title Bar**, **Sidebar**, and **Main Panel (Body Content)**. Understanding these elements will help you navigate and use the app more effectively.
+This section details the main components of the **cd2030.extractor** Shiny App interface: the **Top Navigation Bar (Green Header)**, **Sidebar (Data Controls)**, and **Main Panel (Body Content)**. Understanding these elements will help you navigate and use the app more effectively.
 
-## Title Bar
+## Navigation Bar (Top Menu)
 
-The Title Bar, located at the top of the app, provides key information controls. The elements of the Title Bar, such as "Set Cache Directory/Save Cache" and "Download Report," are only displayed after data has been loaded.
+The Top Navigation Bar, located at the top of the app, provides key controls. The navigation tabs included `Service Data`, `Population Data` and `Countdown Data`. On the right side it contains the name of the logged in user and the country
 
-### Key Elements of the Title Bar
+### Key Elements of the Top Navigation Bar
 
-1.  **Contextual Information**: Displays the current analysis context, such as the country of analysis (e.g., "Madagascar - Countdown Analysis").
+1.  **Service Data Tab**: This is mean to download the data for.
 
 images
 
-2.  **Cache Management**
+2.  **Population Data Tab**
 
-    images
+3.  **Countdown Tab**
 
-    -   **Set Cache Directory:** This button allows you to specify a directory for saving intermediate results and progress.
+4.  **Context Information**
 
-    -   **Save Cache:** This button allows you to save the progress of your analysis. This is useful for large analyses or for resuming a session later.
-
-    -   NB:
-
-        -   The Cache button is enabled only once valid data has been uploaded into the App
-        -   Changing the file path of the Cache mid analysis would require you to set the cache again, losing any saved progress after the last save.
+    -   
 
 ## Sidebar
 

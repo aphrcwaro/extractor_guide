@@ -1,2 +1,1 @@
-"0","# library(knitr)"
-"0","# opts_chunk$set(list(echo = FALSE, eval = FALSE))"
+"0","knitr::include_graphics(here::here(""images"",""project-file.jpeg""))"
