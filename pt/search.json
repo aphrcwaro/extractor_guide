@@ -111,7 +111,7 @@
     "href": "pages/app-features.pt.html#sidebar",
     "title": "2  App Features",
     "section": "2.3 Sidebar",
-    "text": "2.3 Sidebar\nThe Sidebar is located on the left side of the app and contains the data control for which the data will be downloaded. It contains the following\n\nData Level: This is for the level of data to be downloaded. The selected level will be considered to be the admin level 2 by the countdown tab.\nFilter by Data Level: This is meant to filter the data downloaded by a single of multiple organisation units at the selected data level\nPeriod: This is the period the data will be downloaded",
+    "text": "2.3 Sidebar\nFound on the left side of the screen, the sidebar lets you define what data to retrieve.\n\n2.3.1 Components:\n\nData Level Choose the administrative level (e.g., County or Sub-County) This selection determines what the Countdown tab treats as administrative level 2\nFilter by Data Level Optionally filter to a specific unit or multiple units at the selected level\nData Period Select the date range for which to retrieve data Uses a start and end date calendar picker",
     "crumbs": [
       "Sobre este Guia",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"

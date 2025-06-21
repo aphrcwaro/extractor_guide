@@ -317,7 +317,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#context-information" id="toc-context-information" class="nav-link" data-scroll-target="#context-information"><span class="header-section-number">2.2.4</span> Context Information</a></li>
   </ul>
 </li>
-  <li><a href="#sidebar" id="toc-sidebar" class="nav-link" data-scroll-target="#sidebar"><span class="header-section-number">2.3</span> Sidebar</a></li>
+  <li>
+<a href="#sidebar" id="toc-sidebar" class="nav-link" data-scroll-target="#sidebar"><span class="header-section-number">2.3</span> Sidebar</a>
+  <ul class="collapse">
+<li><a href="#components" id="toc-components" class="nav-link" data-scroll-target="#components"><span class="header-section-number">2.3.1</span> Components:</a></li>
+  </ul>
+</li>
   </ul>
 <div class="toc-actions"><ul>
 <li><a href="https://github.com/aphrcwaro/extractor_guide/edit/main/pages/app-features.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li>
@@ -437,15 +442,28 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section></section><section id="sidebar" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="sidebar">
 <span class="header-section-number">2.3</span> Sidebar</h2>
-<p>The Sidebar is located on the left side of the app and contains the data control for which the data will be downloaded. It contains the following</p>
-<ol type="1">
+<p>Found on the left side of the screen, the sidebar lets you define what data to retrieve.</p>
+<section id="components" class="level3" data-number="2.3.1"><h3 data-number="2.3.1" class="anchored" data-anchor-id="components">
+<span class="header-section-number">2.3.1</span> Components:</h3>
+<ul>
 <li>
-<strong>Data Level</strong>: This is for the level of data to be downloaded. The selected level will be considered to be the admin level 2 by the countdown tab.</li>
+<strong>Data Level</strong> Choose the administrative level (e.g., County or Sub-County) This selection determines what the Countdown tab treats as administrative level 2</li>
 <li>
-<strong>Filter by Data Level</strong>: This is meant to filter the data downloaded by a single of multiple organisation units at the selected data level</li>
+<strong>Filter by Data Level</strong> Optionally filter to a specific unit or multiple units at the selected level</li>
 <li>
-<strong>Period</strong>: This is the period the data will be downloaded</li>
-</ol></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<strong>Data Period</strong> Select the date range for which to retrieve data Uses a start and end date calendar picker</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="../images/sidebar.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="../images/sidebar.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
