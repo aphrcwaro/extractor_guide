@@ -4,28 +4,27 @@
 
 This **cd2030.extractor** app has three main sections
 
-- **Top Navigation Bar** (Green Header)
-- **Sidebar** (Data Controls on the left)
-- **Main Panel** (Central Content area) 
+-   **Top Navigation Bar** (Green Header)
+-   **Sidebar** (Data Controls on the left)
+-   **Main Panel** (Central Content area)
 
 Understanding these sections helps you select, filter, and extract DHIS2 data efficiently.
 
 ## Top Navigation Bar
 
-The Navigation Bar spans the top of the app.
-It include:
+The Navigation Bar spans the top of the app. It include:
 
-- Three navigation tabs: `Service Data`, `Population Data` and `Countdown Data`. 
-- User identity and country displayedOn the right side 
-- If logged in via a custom URL, the base URL appears instead of the country name
+-   Three navigation tabs: `Service Data`, `Population Data` and `Countdown Data`.
+-   User identity and country displayedOn the right side
+-   If logged in via a custom URL, the base URL appears instead of the country name
 
-### Service Data Tab: 
+### Service Data Tab:
 
 Use this tab to retrieve monthly service data.
 
-- Select data elements from DHIS2
-- Filter by period, organisation level, or unit
-- View and download structured data tables
+-   Select data elements from DHIS2
+-   Filter by period, organisation level, or unit
+-   View and download structured data tables
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","service-tab.jpeg"))
@@ -37,8 +36,8 @@ knitr::include_graphics(here::here("images","service-tab.jpeg"))
 
 Used for downloading population data or other yearly indicators.
 
-- Allows selection of elements organized by year
-- Functions similarly to Service Data but on an annual scale
+-   Allows selection of elements organized by year
+-   Functions similarly to Service Data but on an annual scale
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","population-tab.jpeg"))
@@ -50,9 +49,9 @@ knitr::include_graphics(here::here("images","population-tab.jpeg"))
 
 Enables extraction of Countdown indicators.
 
-- Maps DHIS2 data elements to Countdown indicators
-- Downloads mapped data and structure for portability
-- Exports Excel file preformatted for Countdown data analysis
+-   Maps DHIS2 data elements to Countdown indicators
+-   Downloads mapped data and structure for portability
+-   Exports Excel file preformatted for Countdown data analysis
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","countdown-tab.jpeg"))
@@ -64,10 +63,10 @@ knitr::include_graphics(here::here("images","countdown-tab.jpeg"))
 
 Located on the top-right.
 
-- Shows logged-in username
-- Displays selected country
-- If using a custom DHIS2 instance, shows the instance URL instead
-- Has a log-out button to clear the credentials
+-   Shows logged-in username
+-   Displays selected country
+-   If using a custom DHIS2 instance, shows the instance URL instead
+-   Has a log-out button to clear the credentials
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","context-menu.jpeg"))
@@ -77,8 +76,16 @@ knitr::include_graphics(here::here("images","context-menu.jpeg"))
 
 ## Sidebar
 
-The Sidebar is located on the left side of the app and contains the data control for which the data will be downloaded. It contains the following
+Found on the left side of the screen, the sidebar lets you define what data to retrieve.
 
-1. **Data Level**: This is for the level of data to be downloaded. The selected level will be considered to be the admin level 2 by the countdown tab.
-2. **Filter by Data Level**: This is meant to filter the data downloaded by a single of multiple organisation units at the selected data level
-3. **Period**: This is the period the data will be downloaded
+### Components:
+
+-   **Data Level** Choose the administrative level (e.g., County or Sub-County) This selection determines what the Countdown tab treats as administrative level 2
+-   **Filter by Data Level** Optionally filter to a specific unit or multiple units at the selected level
+-   **Data Period** Select the date range for which to retrieve data Uses a start and end date calendar picker
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","sidebar.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```

@@ -1,0 +1,96 @@
+# How to Download Data
+
+## Introduction
+
+When you launch the `cd2030.extractor` app, the first screen is the login page. You must provide your DHIS2 credentials and the URL of the DHIS2 instance you want to access.
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","dashboard.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+### Required Fields
+
+-   **DHIS2 Username**: Enter your DHIS2 username
+-   **DHIS2 Password**: Enter your password
+-   **Country**: Select your country from the dropdown
+-   **Base URL**: Shown automatically for most countries. You can also enter it manually
+
+To enable manual entry, check the `Enter URL manually` box. Use this if your country or DHIS2 instance is not listed.
+
+------------------------------------------------------------------------
+
+### How to Find Your DHIS2 Base URL
+
+If you're not sure about the base URL:
+
+1.  Open your DHIS2 system in a browser
+2.  Look at the address bar
+3.  Copy everything **before** `/dhis-web-commons`
+
+**Example:** If your login page is `https://hiskenya.org/dhis-web-commons/security/login.action` then your base URL is `https://hiskenya.org`
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","base-url.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+## Using the Countdown Tab
+
+After logging in, you will land on the main dashboard. Navigate to the **Countdown** tab to begin the data preparation process.
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","download-screen.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+### Step 1: Set Data Level and Period
+
+Use the **Sidebar** on the left to:
+
+-   Select the appropriate **Data Level** (e.g., County, Sub-County)
+-   Define the **Date Range** for data extraction
+
+### Step 2: Map Data Elements to Countdown Indicators
+
+Click the **Map Data Elements** button. A dialog will open.
+
+You will be prompted to:
+
+1.  Select the **Countdown Indicator** (First Data Element)\
+2.  Map it to one or more **DHIS2 Data Elements** (Second Data Element)
+    -   Multiple DHIS2 elements can be selected for one indicator\
+3.  (Optional) Select relevant **Category Options**
+    -   Leave this blank if all categories are valid
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","map-elements.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+### Step 3: Map Datasets to Countdown Indicators
+
+Click the **Map Dataset** button. A similar dialog will appear.
+
+-   First selection: Countdown Indicator\
+-   Second selection: Dataset(s) from DHIS2 to link with the indicator
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","map-dataset.jpeg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+### Downloading and Managing Mappings
+
+-   Click **Download CSV** to export your mapping file\
+-   Click **Retrieve Data** to download the matched data in Countdown format
+
+If any mapping is incorrect:
+
+-   Select the item from the list\
+-   Click the **Delete** button to remove it
