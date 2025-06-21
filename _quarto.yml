@@ -31,7 +31,6 @@ format:
       light: cosmo
       dark: darkly
     code-link: true
-    author: "David Kariuki"
 
 book:
   title: CD2030 Extractor User Guide

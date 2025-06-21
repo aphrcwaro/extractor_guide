@@ -13,11 +13,19 @@ A iniciativa Countdown to 2030 para a Saúde da Mulher, da Criança e do Adolesc
 
 Para mais informações sobre a iniciativa Countdown to 2030, visite: [O site The Countdown](https://www.countdown2030.org/about)
 
-## Sobre o Pacote R `cd2030.extractor` {.unnumbered}
+## Sobre o pacote R `cd2030.extractor` {.unnumbered}
 
-O aplicativo R Shiny `cd2030.extractor` foi desenvolvido para ajudar você a baixar dados do Countdown diretamente do DHIS2. Ele funciona com o DHIS2 em todos os países suportados.
+O aplicativo Shiny `cd2030.extractor` foi desenvolvido para facilitar o download de dados do Countdown diretamente a partir do DHIS2.  
+É compatível com instâncias do DHIS2 em todos os países suportados.
 
-Principais características:
+O código-fonte está disponível no GitHub:  
+[https://github.com/aphrcwaro/extractor_guide](https://github.com/aphrcwaro/extractor_guide)
 
-- Interface limpa e simples para seleção e gerenciamento de dados
-- Exporta dados no formato padrão do Countdown para análise e relatórios
+A documentação completa está disponível em:  
+[https://aphrcwaro.github.io/extractor_guide/](https://aphrcwaro.github.io/extractor_guide/)
+
+### Principais funcionalidades
+
+- Interface intuitiva para seleção e gerenciamento de dados  
+- Exportação dos dados no formato padrão do Countdown, pronto para análise e geração de relatórios
+

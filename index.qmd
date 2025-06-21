@@ -14,9 +14,17 @@ For more on Countdown to 2030 initiative, visit: [The Countdown website](https:/
 
 ## About the `cd2030.extractor` R Package {.unnumbered}
 
-The `cd2030.extractor` R Shiny app was developed to help you download Countdown data directly from DHIS2. t works with DHIS2 in all supported countries.
+The `cd2030.extractor` R Shiny app is designed to help users download Countdown data directly from DHIS2.  
+It works with DHIS2 instances across all supported countries.
 
-Key features:
+The app is hosted on GitHub:  
+[https://github.com/aphrcwaro/extractor_guide](https://github.com/aphrcwaro/extractor_guide)
 
--   Clean, simple interface for selecting and managing data
--   Exports data in the standard Countdown format for analysis and reporting
+Full documentation is available here:  
+[https://aphrcwaro.github.io/extractor_guide/](https://aphrcwaro.github.io/extractor_guide/)
+
+### Key Features
+
+- Intuitive interface for selecting and managing data  
+- Direct integration with DHIS2 for streamlined access  
+- Outputs data in the Countdown-standard format for analysis and reporting
