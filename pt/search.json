@@ -23,8 +23,8 @@
     "objectID": "index.pt.html#sobre-o-pacote-r-cd2030.extractor",
     "href": "index.pt.html#sobre-o-pacote-r-cd2030.extractor",
     "title": "Guia do Usuário do Extrator CD2030",
-    "section": "Sobre o Pacote R cd2030.extractor",
-    "text": "Sobre o Pacote R cd2030.extractor\nO aplicativo R Shiny cd2030.extractor foi desenvolvido para ajudar você a baixar dados do Countdown diretamente do DHIS2. Ele funciona com o DHIS2 em todos os países suportados.\nPrincipais características:\n\nInterface limpa e simples para seleção e gerenciamento de dados\nExporta dados no formato padrão do Countdown para análise e relatórios",
+    "section": "Sobre o pacote R cd2030.extractor",
+    "text": "Sobre o pacote R cd2030.extractor\nO aplicativo Shiny cd2030.extractor foi desenvolvido para facilitar o download de dados do Countdown diretamente a partir do DHIS2.\nÉ compatível com instâncias do DHIS2 em todos os países suportados.\nO código-fonte está disponível no GitHub:\nhttps://github.com/aphrcwaro/extractor_guide\nA documentação completa está disponível em:\nhttps://aphrcwaro.github.io/extractor_guide/\n\nPrincipais funcionalidades\n\nInterface intuitiva para seleção e gerenciamento de dados\n\nExportação dos dados no formato padrão do Countdown, pronto para análise e geração de relatórios",
     "crumbs": [
       "Bem-vindo"
     ]
