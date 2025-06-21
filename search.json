@@ -116,5 +116,38 @@
       "About this guide",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>App Features</span>"
     ]
+  },
+  {
+    "objectID": "pages/downloading-data.html",
+    "href": "pages/downloading-data.html",
+    "title": "3  How to Download Data",
+    "section": "",
+    "text": "3.1 Introduction\nWhen you launch the cd2030.extractor app, the first screen is the login page. You must provide your DHIS2 credentials and the URL of the DHIS2 instance you want to access.",
+    "crumbs": [
+      "About this guide",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How to Download Data</span>"
+    ]
+  },
+  {
+    "objectID": "pages/downloading-data.html#introduction",
+    "href": "pages/downloading-data.html#introduction",
+    "title": "3  How to Download Data",
+    "section": "",
+    "text": "3.1.1 Required Fields\n\nDHIS2 Username: Enter your DHIS2 username\nDHIS2 Password: Enter your password\nCountry: Select your country from the dropdown\nBase URL: Shown automatically for most countries. You can also enter it manually\n\nTo enable manual entry, check the Enter URL manually box. Use this if your country or DHIS2 instance is not listed.\n\n\n\n3.1.2 How to Find Your DHIS2 Base URL\nIf you’re not sure about the base URL:\n\nOpen your DHIS2 system in a browser\nLook at the address bar\nCopy everything before /dhis-web-commons\n\nExample: If your login page is https://hiskenya.org/dhis-web-commons/security/login.action then your base URL is https://hiskenya.org",
+    "crumbs": [
+      "About this guide",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How to Download Data</span>"
+    ]
+  },
+  {
+    "objectID": "pages/downloading-data.html#using-the-countdown-tab",
+    "href": "pages/downloading-data.html#using-the-countdown-tab",
+    "title": "3  How to Download Data",
+    "section": "3.2 Using the Countdown Tab",
+    "text": "3.2 Using the Countdown Tab\nAfter logging in, you will land on the main dashboard. Navigate to the Countdown tab to begin the data preparation process.\n\n\n\n\n\n\n\n\n\n\n3.2.1 Step 1: Set Data Level and Period\nUse the Sidebar on the left to:\n\nSelect the appropriate Data Level (e.g., County, Sub-County)\nDefine the Date Range for data extraction\n\n\n\n3.2.2 Step 2: Map Data Elements to Countdown Indicators\nClick the Map Data Elements button. A dialog will open.\nYou will be prompted to:\n\nSelect the Countdown Indicator (First Data Element)\n\nMap it to one or more DHIS2 Data Elements (Second Data Element)\n\nMultiple DHIS2 elements can be selected for one indicator\n\n\n(Optional) Select relevant Category Options\n\nLeave this blank if all categories are valid\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.2.3 Step 3: Map Datasets to Countdown Indicators\nClick the Map Dataset button. A similar dialog will appear.\n\nFirst selection: Countdown Indicator\n\nSecond selection: Dataset(s) from DHIS2 to link with the indicator\n\n\n\n\n\n\n\n\n\n\n\n\n3.2.4 Downloading and Managing Mappings\n\nClick Download CSV to export your mapping file\n\nClick Retrieve Data to download the matched data in Countdown format\n\nIf any mapping is incorrect:\n\nSelect the item from the list\n\nClick the Delete button to remove it",
+    "crumbs": [
+      "About this guide",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How to Download Data</span>"
+    ]
   }
 ]

@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aphrcwaro.github.io/extractor_guide/index.html</loc>
-    <lastmod>2025-06-21T05:38:13.378Z</lastmod>
+    <lastmod>2025-06-21T05:38:33.003Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/extractor_guide/pages/getting-started.html</loc>
-    <lastmod>2025-06-21T05:38:13.378Z</lastmod>
+    <lastmod>2025-06-21T05:38:33.003Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/extractor_guide/pages/app-features.html</loc>
-    <lastmod>2025-06-21T05:38:13.378Z</lastmod>
+    <lastmod>2025-06-21T05:38:33.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/extractor_guide/pages/downloading-data.html</loc>
+    <lastmod>2025-06-21T05:38:33.003Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/extractor_guide/pages/references.html</loc>
-    <lastmod>2025-06-21T05:38:13.378Z</lastmod>
+    <lastmod>2025-06-21T05:38:33.003Z</lastmod>
   </url>
 </urlset>
