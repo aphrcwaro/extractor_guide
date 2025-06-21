@@ -54,5 +54,6 @@ book:
       chapters:
         - pages/getting-started.qmd
         - pages/app-features.qmd
+        - pages/downloading-data.qmd
     
     - pages/references.qmd
